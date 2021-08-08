@@ -3,6 +3,8 @@
 namespace MrNinja008\InfoBook;
 
 use pocketmine\item\Item;
+use pocketmine\Player;
+use pocketmine\utils\Config;
 use pocketmine\item\WrittenBook;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
@@ -11,16 +13,18 @@ use pocketmine\event\player\PlayerJoinEvent;
 class Book extends PluginBase implements Listener {
     public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
+        @mkdir($this->getDataFolder());
+        $this->saveResource("player.yml");
+        $this->player = new Config($this->getDataFolder() . "player.yml", Config::YAML);
         $this->saveDefaultConfig();
   }
   
   public function onJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
-        if (!in_array($player->getName(), explode(PHP_EOL, file_get_contents("players.txt")))) {
-            sendInfoBook($player);
-            file_put_contents("players.txt", $player->getName() . PHP_EOL, FILE_APPEND);
-            }
-
+        $config = new Config($this->getDataFolder().'player.yml', Config::YAML);
+        if(!$config->exists($player->getName())){
+        $config->set($player->getName());
+	$config->save();
         if($player->getFirstPlayed() == $player->getLastPlayed()) {
         $book = Item::get(Item::WRITTEN_BOOK);
         if(!$book instanceof WrittenBook) return;
