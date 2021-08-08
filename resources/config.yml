@@ -1,0 +1,16 @@
+#    _      ___     ___            __  
+#   (_)__  / _/__  / _ )___  ___  / /__
+#  / / _ \/ _/ _ \/ _  / _ \/ _ \/  '_/
+# /_/_//_/_/ \___/____/\___/\___/_/\_\ 
+# THIS PLUGIN WAS MADE BY MRNINJA008
+# CONFIGURATION FILE OF INFORMATION BOOK
+BookName: "InfoBook"
+# Name Of The Book
+PageText: "This is INFORMATION Book\n Plugin Made By MrNinja008\n Hope You Like it!"
+# Text Of Page you can use "\n" For Line Break 
+AuthorName: "InfoBook"
+# AuthorName
+BookInvSlot: 4
+#HotbarSlot
+
+                        
