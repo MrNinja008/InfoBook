@@ -5,4 +5,5 @@ branches:
 projects:
   InfoBook:
     path: ""
+    icon: "Written_Book.gif"
 ...
