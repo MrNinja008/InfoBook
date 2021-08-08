@@ -16,6 +16,11 @@ class Book extends PluginBase implements Listener {
   
   public function onJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
+        if (!in_array($player->getName(), explode(PHP_EOL, file_get_contents("players.txt")))) {
+            sendInfoBook($player);
+            file_put_contents("players.txt", $player->getName() . PHP_EOL, FILE_APPEND);
+            }
+
         if($player->getFirstPlayed() == $player->getLastPlayed()) {
         $book = Item::get(Item::WRITTEN_BOOK);
         if(!$book instanceof WrittenBook) return;
