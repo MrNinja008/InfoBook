@@ -4,5 +4,6 @@ branches:
 - main
 projects:
   InfoBook:
-    path: ""
+    path: "MrNinja008\infoBook\Book"
+ 
 ...
