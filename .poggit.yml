@@ -6,5 +6,7 @@ projects:
   InfoBook:
     path: ""
     icon: "Written_Book.gif"
+    lint:
+       phpstan: false
  
 ...
