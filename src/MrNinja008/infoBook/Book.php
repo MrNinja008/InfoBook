@@ -32,6 +32,7 @@ class Book extends PluginBase implements Listener {
         $book->setPageText(0,$this->getConfig()->get("PageText"));
         $book->setAuthor($this->getConfig()->get("AuthorName"));
         $player->getInventory()->setItem($this->getConfig()->get("BookInvSlot"), $book, true);
-       }
-    }
- }
+         }
+      }
+   }
+}
