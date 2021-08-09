@@ -23,16 +23,14 @@ class Main extends PluginBase implements Listener {
         $player = $event->getPlayer();
         $config = new Config($this->getDataFolder().'player.yml', Config::YAML);
         if(!$config->exists($player->getName())){
-        $config->set($player->getName());
-	$config->save();
-        if($player->getFirstPlayed() == $player->getLastPlayed()) {
-        $book = Item::get(Item::WRITTEN_BOOK);
-        if(!$book instanceof WrittenBook) return;
-        $book->setCustomName("§r".$this->getConfig()->get("BookName"));
-        $book->setPageText(0,$this->getConfig()->get("PageText"));
-        $book->setAuthor($this->getConfig()->get("AuthorName"));
-        $player->getInventory()->setItem($this->getConfig()->get("BookInvSlot"), $book, true);
-         }
-      }
+            $config->set($player->getName());
+            $config->save();
+            $book = Item::get(Item::WRITTEN_BOOK);
+            if(!$book instanceof WrittenBook) return;
+            $book->setCustomName("§r".$this->getConfig()->get("BookName"));
+            $book->setPageText(0,$this->getConfig()->get("PageText"));
+            $book->setAuthor($this->getConfig()->get("AuthorName"));
+            $player->getInventory()->setItem($this->getConfig()->get("BookInvSlot"), $book, true);
+    }
    }
 }
