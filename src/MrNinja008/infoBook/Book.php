@@ -1,6 +1,6 @@
 <?php 
 
-namespace MrNinja008\InfoBook;
+namespace MrNinja008\infoBook;
 
 use pocketmine\item\Item;
 use pocketmine\Player;
