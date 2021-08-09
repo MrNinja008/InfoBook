@@ -11,3 +11,7 @@
 - Book Name Customisable
 - Book Author Name Customisable
 - Fully Customisable in Config
+## Images👀
+
+![Bank1](https://media.discordapp.net/attachments/847128531288719403/873929937034297344/IMG_20210808_193522.jpg)
+![Bank2](https://media.discordapp.net/attachments/847128531288719403/873930236000108594/IMG_20210808_193636.jpg)
