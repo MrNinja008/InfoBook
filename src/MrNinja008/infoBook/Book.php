@@ -28,12 +28,12 @@ class Book extends PluginBase implements Listener {
             $book = Item::get(Item::WRITTEN_BOOK);
             if(!$book instanceof WrittenBook) return;
             $book->setCustomName("§r".$this->getConfig()->get("BookName"));
-            $book->setPageText(0,$this->getConfig()->get("PageText"));
-            $book->setPageText(1,$this->getConfig()->get("Page1 Text"));
-            $book->setPageText(2,$this->getConfig()->get("Page2 Text"));
-            $book->setPageText(3,$this->getConfig()->get("Page3 Text"));
-            $book->setPageText(4,$this->getConfig()->get("Page4 Text"));
-            $book->setPageText(5,$this->getConfig()->get("Page5 Text"));
+            $book->setPageText(0,$this->getConfig()->get("Page1 Text"));
+            $book->setPageText(1,$this->getConfig()->get("Page2 Text"));
+            $book->setPageText(2,$this->getConfig()->get("Page3 Text"));
+            $book->setPageText(3,$this->getConfig()->get("Page4 Text"));
+            $book->setPageText(4,$this->getConfig()->get("Page5 Text"));
+            $book->setPageText(5,$this->getConfig()->get("Page6 Text"));
             $book->setAuthor($this->getConfig()->get("AuthorName"));
             $player->getInventory()->setItem($this->getConfig()->get("BookInvSlot"), $book, true);
     }
