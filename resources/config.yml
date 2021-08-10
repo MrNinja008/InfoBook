@@ -6,11 +6,11 @@
 # CONFIGURATION FILE OF INFORMATION BOOK
 BookName: "InfoBook"
 # Name Of The Book
-PageText: "This is INFORMATION Book\n Plugin Made By MrNinja008\n Hope You Like it!"
-Page1 Text: ""
+Page1 Text: "This is INFORMATION Book\n Plugin Made By MrNinja008\n Hope You Like it!"
 Page2 Text: ""
 Page3 Text: ""
 Page4 Text: ""
+Page5 Text: ""
 # Text Of Page you can use "\n" For Line Break 
 AuthorName: "InfoBook"
 # AuthorName
