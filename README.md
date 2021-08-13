@@ -5,6 +5,7 @@ made by MrNinja008 for PocketMine-MP.</b><br>
 
 [![](https://poggit.pmmp.io/shield.api/InfoBook)](https://poggit.pmmp.io/p/InfoBook)
 [![](https://poggit.pmmp.io/shield.state/InfoBook)](https://poggit.pmmp.io/p/InfoBook)
+[![](https://poggit.pmmp.io/shield.dl.total/InfoBook)](https://poggit.pmmp.io/p/InfoBook)
 ## 🌴Features
 
 - Inventory Slot Fully Customisable 
