@@ -11,6 +11,9 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 
 class Book extends PluginBase implements Listener {
+
+    public $player;
+
     public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         @mkdir($this->getDataFolder());
@@ -21,7 +24,7 @@ class Book extends PluginBase implements Listener {
   
   public function onJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
-        $config = new Config($this->getDataFolder().'player.yml', Config::YAML);
+        $config = $this->player;
         if(!$config->exists($player->getName())){
             $config->set($player->getName());
             $config->save();
