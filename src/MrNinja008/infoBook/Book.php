@@ -34,7 +34,7 @@ class Book extends PluginBase implements Listener {
 
             $contents = $this->getConfig()->get("BookContents");
 
-            foreach ($contents as $index=>$content) $book->setPageText($index, $this->replaceTags($content, $player));
+            foreach ($contents as $content) $book->setPageText($index, $this->replaceTags($content, $player));
 
             $player->getInventory()->setItem((int)$this->getConfig()->get("BookInvSlot"), $book, true);
         }
