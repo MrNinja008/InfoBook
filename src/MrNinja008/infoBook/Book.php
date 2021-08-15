@@ -3,6 +3,7 @@
 namespace MrNinja008\infoBook;
 
 use pocketmine\Player;
+use pocketmine\Server;
 use pocketmine\utils\Config;
 use pocketmine\item\WrittenBook;
 use pocketmine\plugin\PluginBase;
