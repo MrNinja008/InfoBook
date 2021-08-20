@@ -13,7 +13,18 @@ made by MrNinja008 for PocketMine-MP.</b><br>
 - Book Name Customisable
 - Book Author Name Customisable
 - Fully Customisable in Config
+- Infinite Pages!
+- BookTags
 ## Images👀
 
 ![Bank1](https://media.discordapp.net/attachments/847128531288719403/873929937034297344/IMG_20210808_193522.jpg)
 ![Bank2](https://media.discordapp.net/attachments/847128531288719403/873930236000108594/IMG_20210808_193636.jpg)
+
+## Tags🌀
+| Tag | Description |
+|:--:|:--:|
+|`{name}`|Display name of the player|
+|`{online_players}`|The number of players online on the server|
+|`{max_players}`|Maximum number of players that the server supports|
+|`{ping}`|Ping of the player|
+This Are the current available tags to show in book
