@@ -43,6 +43,6 @@ class Book extends PluginBase implements Listener {
 
     public function replaceTags (string $string, Player $player) : string
     {
-        return TextFormat::colorize(str_replace(["{max_players}", "{online_players}", "{player}","{ping}" ], [$this->getServer()->getQueryInformation()->getMaxPlayerCount(), (string) count($this->getServer()->getQueryInformation()->getPlayerCount()), $player->getName(), (string) $player->getPing()], $string));
+        return TextFormat::colorize(str_replace(["{max_players}", "{online_players}", "{player}","{ping}" ], [$this->getServer()->getQueryInformation()->getMaxPlayerCount(), (string) ($this->getServer()->getQueryInformation()->getPlayerCount()), $player->getName(), (string) $player->getPing()], $string));
     }
 }
