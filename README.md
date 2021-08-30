@@ -23,7 +23,7 @@ made by MrNinja008 for PocketMine-MP.</b><br>
 ## Tags🌀
 | Tag | Description |
 |:--:|:--:|
-|`{name}`|Display name of the player|
+|`{player}`|Display name of the player|
 |`{online_players}`|The number of players online on the server|
 |`{max_players}`|Maximum number of players that the server supports|
 |`{ping}`|Ping of the player|
